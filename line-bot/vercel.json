@@ -1,0 +1,15 @@
+{
+  "builds": [
+    {
+      "src": "api/callback.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/callback",
+      "methods": ["POST"],
+      "dest": "api/callback.py"
+    }
+  ]
+}
